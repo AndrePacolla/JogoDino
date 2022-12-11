@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game{
+    width: 500px;
+    height: 200px;
+    border: 2px solid #ccc;
+    box-shadow: 1px 1px 10px rgb(201, 48, 48);
+}
+
+.personagem{
+    height: 50px;
+    width: 20px;
+    background-color: red;
+    border-radius: 15%;
+    position: relative;
+    top: 150px;
+}
+
+.animar{
+    animation: personagem 500ms infinite ;
+
+
+}
+@keyframes personagem{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+.obstaculo{
+    height: 20px;
+    width: 20px;
+    background: linear-gradient( rgb(107, 148, 238) , blue );
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: obstaculo 1s infinite linear;
+    border-radius: 50% ;
+
+}
+
+
+@keyframes obstaculo{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
